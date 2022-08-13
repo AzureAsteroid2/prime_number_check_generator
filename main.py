@@ -10,7 +10,8 @@ def main():
     else:
       numbers = int(numbers)
       file = open("prime.py", 'w')
-      file.write(f"input('what number do you want to check? (input 1 or above up to {numbers})') #asks the user for number input")
+      file.write(f"number = input('what number do you want to check? (input 1 or above up to {numbers})') #asks the user for number input")
+      file.write("\nnumber = int(number)")
   except:
     print("Only put positive whole numbers!")
   for i in range(numbers):
